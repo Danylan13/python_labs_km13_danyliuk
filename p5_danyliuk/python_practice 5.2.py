@@ -19,4 +19,4 @@ while True:
     if coc.lower() == 'mi scusi':
         continue
     else:
-        print('The program is over.')
+        print('The program is finish.')

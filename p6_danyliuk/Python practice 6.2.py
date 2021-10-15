@@ -22,10 +22,10 @@ def get_key(value):
 
 while True:
     string = str(input('Input message: '))
-    print('Phone variant: ', end='')
+    print('Phone variant: ', end = '')
     for i in range(len(string)):
         key, times = get_key(string[i].lower())
-        print(str(key)*(times+1), end='')
+        print(str(key)*(times+1), end = '')
 
     coc = input('\nInput "mi scusi" to enter one more line of elements or another symbol to exit: ')
     if coc.lower() == 'mi scusi':

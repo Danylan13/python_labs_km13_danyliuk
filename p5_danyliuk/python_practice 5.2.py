@@ -16,8 +16,7 @@ while True:
     print(*elements_list)
 
     coc = input('\nInput "mi scusi" to enter one more line of elements or another symbol to exit: ')
-    if coc.lower == 'mi scusi':
-        print('mi scusi')
-        break
-    else:
+    if coc.lower() == 'mi scusi':
         continue
+    else:
+        print('The program is over.')

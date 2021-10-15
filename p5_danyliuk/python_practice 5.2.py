@@ -15,7 +15,7 @@ while True:
         elements_list.insert(-1, 'and')
     print(*elements_list)
 
-    coc = input("Enter 'mi scusi' to exit or to continue the program: ")
+    coc = input('\nInput "mi scusi" to enter one more line of elements or another symbol to exit: ')
     if coc.lower == 'mi scusi':
         print('mi scusi')
         break

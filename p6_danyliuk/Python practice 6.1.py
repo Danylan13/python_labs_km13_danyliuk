@@ -1,4 +1,4 @@
-While True:
+while True:
     phrase1 = input("Input the first phrase: ").split()
     phrase2 = input("Input the second phrase: ").split()
 

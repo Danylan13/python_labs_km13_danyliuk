@@ -49,8 +49,8 @@ def main():
         try:
             get_result(a, b, c)
 
-            answer = input('To exit, enter \'mi scusi\' in the input field: ')
-            if answer == "mi scusi":
+            repeat = input('To exit, enter \'mi scusi\' in the input field: ')
+            if repeat == "mi scusi":
                 print("-"*73)
                 print("The work is completed")
                 break

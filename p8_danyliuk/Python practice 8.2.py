@@ -8,7 +8,7 @@ def get_discriminant(a, b, c):
             raise ValueError
         return D**0.5
     except ValueError:
-        print("Помилка! Рівняння не має розв'язків (D < 0)")
+        print("Error! The equation has no solutions (D < 0)")
         return -1
 
 # print result of calculations
@@ -26,33 +26,33 @@ def get_result(a, b, c):
             x = -c / b
             print(f"\nx = {x}")
         else:
-            print("Помилка! Ділення на 0 (a = 0)")
+            print("Error! Division by 0 (a = 0)")
     finally:
         return
 
 # main menu
 # input: a, b, c
-# 'e' to exit after calculations
+# 'mi scusi' to exit after calculations
 def main():
-    print('Програма підрахунку коренів квадратного рівняння без попередніх перевірок')
-    print('Квадратне рівння алгебраїчного виду: ax²+bx+c=...')
+    print('The program for calculating the roots of a quadratic equation without prior checks')
+    print('Quadratic equation of algebraic form: ax²+bx+c=...')
     print("-"*73)
     while True:
         try:
-            a = float(input('Введіть число замість змінної "a": '))
-            b = float(input('Введіть число замість змінної "b": '))
-            c = float(input('Введіть число замість змінної "c": '))
+            a = float(input('Enter a number instead of a variable "a": '))
+            b = float(input('Enter a number instead of a variable "b": '))
+            c = float(input('Enter a number instead of a variable "c": '))
     
         except ValueError:
-            print("Помилка вводу даних! Повторіть спробу")
+            print("Data entry error! Please try again")
             continue
         try:
             get_result(a, b, c)
 
-            answer = input('Для виходу введіть \'mi scusi\' в поле вводу: ')
+            answer = input('To exit, enter \'mi scusi\' in the input field: ')
             if answer == "mi scusi":
                 print("-"*73)
-                print("Роботу завершено")
+                print("The work is completed")
                 break
         except Exception as error:
             print(error)

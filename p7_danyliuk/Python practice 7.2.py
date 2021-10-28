@@ -1,7 +1,10 @@
 rgb_code = '#{}{}{}'
 
 def finish():
-    repeat = input('\nInput "mi scusi" to enter one more line of elements or another symbol to exit: ')
+    repeat = input('To exit, enter \'mi scusi\' in the input field: ')
+    if repeat == "mi scusi":
+        print("-"*73)
+        print("The work is completed")
 
 
 def check(color):

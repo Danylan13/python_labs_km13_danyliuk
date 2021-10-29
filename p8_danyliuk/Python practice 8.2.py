@@ -1,6 +1,5 @@
 import math
 
-# return's discriminant of sentense
 def get_discriminant(a, b, c):
     try:
         D = b**2 - 4*a*c
@@ -11,7 +10,6 @@ def get_discriminant(a, b, c):
         print("Error! The equation has no solutions (D < 0)")
         return -1
 
-# print result of calculations
 def get_result(a, b, c):
     try:
         d = get_discriminant(a, b, c)
@@ -30,9 +28,6 @@ def get_result(a, b, c):
     finally:
         return
 
-# main menu
-# input: a, b, c
-# 'mi scusi' to exit after calculations
 def main():
     print('The program for calculating the roots of a quadratic equation without prior checks')
     print('Quadratic equation of algebraic form: ax²+bx+c=...')
@@ -57,6 +52,5 @@ def main():
         except Exception as error:
             print(error)
 
-# entry point
 if __name__ == '__main__':
     main()

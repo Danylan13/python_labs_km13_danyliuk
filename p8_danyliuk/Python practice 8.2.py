@@ -30,6 +30,7 @@ def get_result(a, b, c):
 
 def main():
     print('The program for calculating the roots of a quadratic equation without prior checks')
+    print('Quadratic equation of algebraic form: ax²+bx+c=...')
     print("-"*73)
     while True:
         try:

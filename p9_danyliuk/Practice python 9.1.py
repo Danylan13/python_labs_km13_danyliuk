@@ -1,6 +1,11 @@
 import numpy as np
 import itertools
 
+def finish():
+    repeat = input('To exit, enter \'mi scusi\' in the input field: ')
+    if repeat == "mi scusi":
+        print("The work is completed")
+        
 def random_matrix(dim):
     """
     The function generates dim x dim array of integers
@@ -56,4 +61,4 @@ while True:
     except ValueError:
         print("You have to enter an integer number!")
         break
-    
+finish()

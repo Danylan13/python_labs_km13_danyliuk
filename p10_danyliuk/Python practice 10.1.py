@@ -18,5 +18,5 @@ f = func(salary_list)
 print("Salary table:")
 for i in range(len(salary_list)):
     print(salary_list[i], round(f[0][i], 2), round(f[1][i], 2))
-print("-" * 55)
+print("-" * 54)
 finish()

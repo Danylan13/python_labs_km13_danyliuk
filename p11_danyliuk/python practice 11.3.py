@@ -5,7 +5,6 @@ def finish():
         print("The work is completed.")
 
 def Akk(m, n):
-    
     if m == 0:
        return (n + 1)
     if m > 0 and n == 0:

@@ -5,12 +5,13 @@ def finish():
         print("The work is completed.")
 
 def Akk(m, n):
- if m == 0:
-  return (n + 1)
- if m > 0 and n == 0:
-  return Akk(m - 1, 1)
- if m > 0 and n > 0:
-  return Akk(m - 1, Akk(m, n - 1))
+    
+    if m == 0:
+       return (n + 1)
+    if m > 0 and n == 0:
+       return Akk(m - 1, 1)
+    if m > 0 and n > 0:
+       return Akk(m - 1, Akk(m, n - 1))
 # ПЕРЕВІРКА
 
 test_pairs = list((m, n) for m in range(0,4) for n in range(0,5))

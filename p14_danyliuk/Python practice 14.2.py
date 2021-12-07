@@ -12,3 +12,7 @@ for i in data['images']:
         print("Height :", i['height'])
         print("Width :", i['width'])
         print("Id :", i['id'])
+
+max_id = max([i['id'] for i in data['images']])
+er_max_id = '{}.jpg'.format(max_id).zfill(16)
+print("\nНазва фотографії з найбільшим номером: {}".format(er_max_id))
